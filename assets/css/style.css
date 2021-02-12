@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+	
+}
+
+.container{
+	max-width:1290px;
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+	
+}
+
+
+
+
+.grid-major > *{
+	border: 1px solid black;
+	background-color:green;
+	
+	
+	
+    
+}
+
+
+
+
+
+
+.grid-major{
+    display: grid;
+    grid-template-columns: 300px 400px 300px 300px 400px 300px;
+	grid-auto-rows:200px;
+	grid-template-areas:
+	"link-1 link-2 link-2 link-3 "
+	"link-1 link-2 link-2 link-3 "
+    "link-5 link-4 link-4 link-6"
+	;
+	
+}
+
+
+.Small-item1 {
+	color:white;
+	background-color:#0ABAC8;
+	grid-area:link-1;
+	
+}
+
+.Small-item2 {
+	grid-area:link-2;
+	color:white;
+	background-color:#08DC52 ;
+}
+
+.Small-item3 {
+	grid-area:link-3;
+	color:white;
+	background-color:#CBAEE8 ;
+}
+
+.Small-item4 {
+	grid-area:link-4;
+	color:white;
+	background-color:#4F0F8E ;
+}
+
+.Small-item5 {
+	grid-area:link-5;
+	color:white;
+	background-color:#0ABAC8;
+}
+
+.Small-item6 {
+	grid-area:link-6;
+	color:white;
+	background-color:#CBAEE8;
+}
+
+
+
+
+@media screen and (min-width:250px) and (max-width: 768px){
+   .grid-major{
+	   
+	   display: block;
+	   width: 100%;
+       grid-template-areas:
+	   "link-1 link-2 link-2 link-3 "
+	   "link-1 link-2 link-2 link-3 "
+      "link-5 link-4 link-4 link-6"
+	;
+	  
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	  .grid-major{
+	   
+	   display: block;
+	   width: 100%;
+       grid-template-areas:
+	   "link-1 link-2 link-2 link-3 "
+	   "link-1 link-2 link-2 link-3 "
+      "link-5 link-4 link-4 link-6"
+	;
+	
+	
+	
+	
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.grid-major{
+	   
+	   display: block;
+	   width: 100%;
+       grid-template-areas:
+	   "link-1 link-2 link-2 link-3 "
+	   "link-1 link-2 link-2 link-3 "
+      "link-5 link-4 link-4 link-6"
+	;
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
